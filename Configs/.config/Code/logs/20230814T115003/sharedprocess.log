@@ -1,0 +1,12 @@
+2023-08-14 12:09:06.814 [error] [uncaught exception in sharedProcess]: A system error occurred (read ECONNRESET): Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
+2023-08-14 12:41:44.519 [info] Getting Manifest... ms-python.autopep8
+2023-08-14 12:41:44.528 [info] Installing extension: ms-python.autopep8
+2023-08-14 12:41:45.207 [info] Getting Manifest... ms-python.python
+2023-08-14 12:41:45.733 [warning] Extension signature verification failed with error 'UnknownError': ms-python.autopep8
+2023-08-14 12:41:45.893 [info] Extracted extension to /home/alex/.vscode/extensions/.f01d5d42-82f6-4239-aeaa-0c3bd27251ce: ms-python.autopep8
+2023-08-14 12:41:45.896 [info] Renamed to /home/alex/.vscode/extensions/ms-python.autopep8-2023.6.0
+2023-08-14 12:41:45.898 [info] Extracting extension completed. ms-python.autopep8
+2023-08-14 12:41:45.904 [info] Extension installed successfully: ms-python.autopep8
+2023-08-14 12:52:27.365 [error] [uncaught exception in sharedProcess]: A system error occurred (read ECONNRESET): Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)

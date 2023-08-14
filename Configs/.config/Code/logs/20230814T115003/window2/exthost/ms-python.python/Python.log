@@ -1,0 +1,59 @@
+2023-08-14 11:53:38.801 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-08-14 11:53:38.801 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-08-14 11:53:38.801 [info] Experiment 'pythonSurveyNotificationcf' is active
+2023-08-14 11:53:38.801 [info] Experiment 'pythonTestAdaptercf' is active
+2023-08-14 11:53:38.831 [info] Test server listening.
+2023-08-14 11:53:38.831 [info] Python interpreter path: /bin/python3
+2023-08-14 11:53:39.448 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-08-14 11:53:39.448 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-08-14 11:53:39.448 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-08-14 11:53:40.528 [info] Starting Pylance language server.
+2023-08-14 11:54:07.771 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 11:54:12.309 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 11:57:39.056 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 11:58:34.230 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 11:58:59.858 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 11:59:06.421 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 11:59:35.922 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:18:34.642 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:18:50.930 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:19:10.711 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:41:36.293 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:41:38.216 [info] > /bin/python3 -m autopep8 --diff ./flownet.py
+2023-08-14 12:41:38.216 [info] cwd: .
+2023-08-14 12:41:38.240 [info] > /bin/python3 -c "import autopep8"
+2023-08-14 12:41:45.316 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:41:45.791 [info] > /bin/python3 -m autopep8 --diff ./flownet.py
+2023-08-14 12:41:45.791 [info] cwd: .
+2023-08-14 12:41:45.821 [info] > /bin/python3 -c "import autopep8"
+2023-08-14 12:41:45.863 [info] > /bin/python3 -c "import autopep8"
+2023-08-14 12:41:45.874 [error] 
+Please install 'autopep8' into your environment. 
+If you don't want to use it you can turn it off or use another formatter in the settings.
+2023-08-14 12:41:45.874 [error] Formatting with autopep8 failed:
+Error: Module 'autopep8' not installed.
+2023-08-14 12:41:46.575 [error] Formatting with autopep8 failed:
+Error: Module 'autopep8' not installed.
+2023-08-14 12:41:46.871 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/.vscode/settings.json
+2023-08-14 12:41:47.432 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:46:57.054 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:47:05.069 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:47:06.048 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:49:53.811 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 12:50:59.291 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 12:51:45.591 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 12:51:57.162 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 12:52:08.310 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:52:28.630 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:52:36.280 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:52:41.124 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/flownet.py
+2023-08-14 12:52:53.399 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 12:53:32.945 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 12:53:52.898 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 13:23:16.130 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 13:23:53.270 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 13:24:42.706 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 13:25:42.608 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py
+2023-08-14 13:28:28.457 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/analysis_xcat.py
+2023-08-14 13:31:21.005 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/analysis_xcat.py
+2023-08-14 13:33:36.772 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py

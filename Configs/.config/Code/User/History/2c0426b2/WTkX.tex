@@ -1,0 +1,51 @@
+\chapter{Results}
+\section{Evaluation}
+\subsection{FlowFormer}
+\begin{figure}
+	\centering
+	\begin{subfigure}{\textwidth}
+		
+		\includegraphics[width=\textwidth]{img/flowformer/1.png}
+		\caption{Inference on the provided sintel checkpoint on an example xcat slice. Arrows show the predicted flow vectors at set points. Color indicates flow at much finer distances.}
+		\label{fig:flowformer1}
+		
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		
+		\includegraphics[width=\textwidth]{img/flowformer/2.png}
+		\caption{Inference on the finetuned sintel checkpoint.}
+		\label{fig:flowformer2}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		
+		\includegraphics[width=\textwidth]{img/flowformer/3.png}
+		\caption{Ground truth.}
+		\label{fig:flowformer3}
+	\end{subfigure}
+	\caption{FlowFormer predictions and ground truth on 2 dimensional slices}
+\end{figure}
+
+Initially, the FlowFormer architecture was chosen, since it ranked the highest on multiple benchmarks.
+Using the provided checkpoints, initial performance was evaluated. The flow prediction can be seen in figure \eqref{fig:flowformer1}. While a lot of random movement is predicted in the background, the body is already visible in the center of the  image. The position of the body corresponds to the body visible in the \ac{gt} data seen in figure \eqref{fig:flowformer3}. After trying out different image augmentations, the best results were achieved using the sintel checkpoint  and xcat data with additional noise. All other augmentations were disabled. Using this configuration, an average \ac{EPE} of 0.73 was achieved, with 84\% of the predictions being within 1px of the target, 91\% within 3px and 94\% within 5px as seen in table \eqref{tbl:flowformer}. The results of this training can be seen in figure \eqref{fig:flowformer2}.
+
+After completing the first steps with this approach, it was noticed that the approach was not feasible for three-dimensional data for now, since the training on two-dimensional data already used most of the capacity of two NVIDIA A40 GPUs.
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{|p{7cm}|l|l|l|l|l|}
+		\hline
+		Name & Steps & EPE & 1px & 3px & 5px \\ \hline\hline
+		SINTEL +  noise, eraser-, color- and\newline spatial-transform& 500 & 1.53 & 0.53 & 0.90 & 0.94 \\ \hline
+		SINTEL +  noise, eraser- and color-transform & 500 & 0.73 & 0.84 & 0.90 & 0.94 \\ \hline
+		No base checkpoint +  noise, eraser- and color-transform & 500 & 2.49 & 0.03 & 0.89 & 0.93 \\ \hline
+		No base checkpoint + noise & 500 & 1.85 & 0.18 & 0.89 & 0.94 \\ \hline
+		Sintel + Noise& 500 & 0.73 & 0.84 & 0.91 & 0.94 \\ \hline
+	\end{tabular}
+	
+	\caption{\label{tbl:flowformer} Results for FlowFormer}
+	
+\end{table}
+
+\section{Analysis}
+\section{Comparison to other works}
+

@@ -1,0 +1,39 @@
+#checklist {
+    margin: 0 auto;
+    display: block;
+    text-align: start;
+}
+#checklist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checklist-item {
+    font-size: 42px;
+    padding-bottom: 32px;
+    max-width: 60vw;
+    display: flex;
+    text-align: start;
+}
+
+.checklist-item-checkbox{
+    transform: scale(3);
+    margin-left: -32px;
+}
+.checklist-item-label {
+    margin-left: 32px;
+    display: block;
+}
+
+li {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+ a:visited,  a:active {
+    color: inherit;
+  }
+
+a:hover {
+    color: blanchedalmond;
+}

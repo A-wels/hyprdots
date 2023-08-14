@@ -1,0 +1,118 @@
+[10:20:44.798] Log Level: 2
+[10:20:44.808] SSH Resolver called for "ssh-remote+palma.uni-muenster.de", attempt 1
+[10:20:44.809] "remote.SSH.useLocalServer": true
+[10:20:44.809] "remote.SSH.path": undefined
+[10:20:44.809] "remote.SSH.configFile": undefined
+[10:20:44.809] "remote.SSH.useFlock": true
+[10:20:44.809] "remote.SSH.lockfilesInTmp": false
+[10:20:44.809] "remote.SSH.localServerDownload": auto
+[10:20:44.809] "remote.SSH.remoteServerListenOnSocket": false
+[10:20:44.810] "remote.SSH.showLoginTerminal": false
+[10:20:44.810] "remote.SSH.defaultExtensions": []
+[10:20:44.810] "remote.SSH.loglevel": 2
+[10:20:44.810] "remote.SSH.enableDynamicForwarding": true
+[10:20:44.810] "remote.SSH.enableRemoteCommand": false
+[10:20:44.810] "remote.SSH.serverPickPortsFromRange": {}
+[10:20:44.810] "remote.SSH.serverInstallPath": {}
+[10:20:44.812] VS Code version: 1.80.1
+[10:20:44.812] Remote-SSH version: remote-ssh@0.102.0
+[10:20:44.812] linux x64
+[10:20:44.814] SSH Resolver called for host: palma.uni-muenster.de
+[10:20:44.814] Setting up SSH remote "palma.uni-muenster.de"
+[10:20:44.817] Acquiring local install lock: /tmp/vscode-remote-ssh-9af322b3-install.lock
+[10:20:44.818] Looking for existing server data file at /home/alex/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-9af322b3-74f6148eb9ea00507ec113ec51c489d6ffb4b771-0.102.0/data.json
+[10:20:44.819] Found local server running: {"remoteListeningOn":{"port":42074},"osReleaseId":"centos","arch":"x86_64","webUiAccessToken":"","sshAuthSock":"","display":"","tmpDir":"/run/user/10111115","platform":"linux","connectionToken":"aa1a11aa-1111-11a1-11a1-1aaaaa111aa1","pid":7798,"ipcHandlePath":"/run/user/1000/vscode-ssh-askpass-43ba127912bd4b52a37bd43037442b4309680486.sock","socksPort":45545,"startupTime":1691998905443}
+[10:20:44.823] Server delay-shutdown request failed: connect ENOENT /run/user/1000/vscode-ssh-askpass-43ba127912bd4b52a37bd43037442b4309680486.sock
+[10:20:44.823] Existing server's health check failed, will start a new one
+[10:20:44.823] Using commit id "74f6148eb9ea00507ec113ec51c489d6ffb4b771" and quality "stable" for server
+[10:20:44.827] Install and start server if needed
+[10:20:44.832] PATH: /home/alex/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+[10:20:44.832] Checking ssh with "ssh -V"
+[10:20:44.846] > OpenSSH_9.4p1, OpenSSL 3.1.2 1 Aug 2023
+
+[10:20:44.849] askpass server listening on /run/user/1000/vscode-ssh-askpass-b779bb2be3b6082bc9d2ca936ea8b2fec892a34c.sock
+[10:20:44.849] Spawning local server with {"serverId":1,"ipcHandlePath":"/run/user/1000/vscode-ssh-askpass-9b571dd656959f4597958998d88ed92e16092400.sock","sshCommand":"ssh","sshArgs":["-v","-T","-D","37787","-o","ConnectTimeout=15","palma.uni-muenster.de"],"serverDataFolderName":".vscode-server","dataFilePath":"/home/alex/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-9af322b3-74f6148eb9ea00507ec113ec51c489d6ffb4b771-0.102.0/data.json"}
+[10:20:44.849] Local server env: {"SHELL":"/usr/bin/zsh","DISPLAY":":1","ELECTRON_RUN_AS_NODE":"1","SSH_ASKPASS":"/home/alex/.vscode/extensions/ms-vscode-remote.remote-ssh-0.102.0/out/local-server/askpass.sh","VSCODE_SSH_ASKPASS_NODE":"/opt/visual-studio-code/code","VSCODE_SSH_ASKPASS_EXTRA_ARGS":"--ms-enable-electron-run-as-node","VSCODE_SSH_ASKPASS_MAIN":"/home/alex/.vscode/extensions/ms-vscode-remote.remote-ssh-0.102.0/out/askpass-main.js","VSCODE_SSH_ASKPASS_HANDLE":"/run/user/1000/vscode-ssh-askpass-b779bb2be3b6082bc9d2ca936ea8b2fec892a34c.sock"}
+[10:20:44.854] Spawned 4673
+[10:20:44.948] > local-server-1> Running ssh connection command: "-v -T -D 37787 -o ConnectTimeout=15 palma.uni-muenster.de"
+[10:20:44.953] > local-server-1> Spawned ssh, pid=4682
+[10:20:44.957] stderr> OpenSSH_9.4p1, OpenSSL 3.1.2 1 Aug 2023
+[10:20:45.141] stderr> debug1: Server host key: ssh-rsa SHA256:2DgT9f4Egl82qbm+eLtryg3bNfIxYuT2z8Mhqa5H4B0
+[10:20:45.516] stderr> Authenticated to palma.uni-muenster.de ([128.176.193.70]:22) using "publickey".
+[10:20:46.079] > ready: 14a299c1d412
+[10:20:46.107] > Linux 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023
+[10:20:46.107] Platform: linux
+[10:20:46.132] > /bin/bash
+[10:20:46.132] Shell: bash
+[10:20:46.132] Creating bash subshell inside "bash"
+[10:20:46.168] > bash version:  4.2.46(2)-release
+[10:20:46.252] > 14a299c1d412: running
+[10:20:46.337] > Acquiring lock on /home/a/a_wels03/.vscode-server/bin/74f6148eb9ea00507ec113ec51c489d6ffb4b771/vscode-remote-lock.a_wels03.74f6148eb9ea00507ec113ec51c489d6ffb4b771
+[10:20:46.348] > Found existing installation at /home/a/a_wels03/.vscode-server/bin/74f6148eb9ea00507ec113ec51c489d6ffb4b771...
+> Checking /home/a/a_wels03/.vscode-server/.74f6148eb9ea00507ec113ec51c489d6ffb4b771.log and /home/a/a_wels03/.vscode-server/.74f6148eb9ea00507ec113ec51c489d6ffb4b771.pid for a running server
+[10:20:46.352] > Looking for server with pid: 70176
+[10:20:46.430] > Found running server...
+[10:20:46.436] >  
+> *
+> * Visual Studio Code Server
+> *
+> * By using the software, you agree to
+> * the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+> * the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+> *
+>  
+[10:20:46.470] > Checking server status on port 42074 with wget
+[10:20:46.487] > 14a299c1d412: start
+> SSH_AUTH_SOCK====
+> DISPLAY====
+> webUiAccessToken====
+> listeningOn==42074==
+> osReleaseId==centos==
+> arch==x86_64==
+> vscodeArch==x64==
+> bitness==64==
+> tmpDir==/run/user/10111115==
+> platform==linux==
+> unpackResult====
+> didLocalDownload==0==
+> downloadTime====
+> installTime====
+> extInstallTime====
+> serverStartTime====
+> connectionToken==aa1a11aa-1111-11a1-11a1-1aaaaa111aa1==
+> 14a299c1d412: end
+[10:20:46.487] Received install output: 
+SSH_AUTH_SOCK====
+DISPLAY====
+webUiAccessToken====
+listeningOn==42074==
+osReleaseId==centos==
+arch==x86_64==
+vscodeArch==x64==
+bitness==64==
+tmpDir==/run/user/10111115==
+platform==linux==
+unpackResult====
+didLocalDownload==0==
+downloadTime====
+installTime====
+extInstallTime====
+serverStartTime====
+connectionToken==aa1a11aa-1111-11a1-11a1-1aaaaa111aa1==
+
+[10:20:46.488] Remote server is listening on 42074
+[10:20:46.488] Parsed server configuration: {"serverConfiguration":{"remoteListeningOn":{"port":42074},"osReleaseId":"centos","arch":"x86_64","webUiAccessToken":"","sshAuthSock":"","display":"","tmpDir":"/run/user/10111115","platform":"linux","connectionToken":"aa1a11aa-1111-11a1-11a1-1aaaaa111aa1"},"installUnpackCode":""}
+[10:20:46.489] Persisting server connection details to /home/alex/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-9af322b3-74f6148eb9ea00507ec113ec51c489d6ffb4b771-0.102.0/data.json
+[10:20:46.492] Starting forwarding server. localPort 38029 -> socksPort 37787 -> remotePort 42074
+[10:20:46.492] Forwarding server listening on 38029
+[10:20:46.492] Waiting for ssh tunnel to be ready
+[10:20:46.493] [Forwarding server 38029] Got connection 0
+[10:20:46.494] Tunneled 42074 to local port 38029
+[10:20:46.495] Resolved "ssh-remote+palma.uni-muenster.de" to "127.0.0.1:38029"
+[10:20:46.507] ------
+
+
+
+
+[10:20:46.542] [Forwarding server 38029] Got connection 1
+[10:20:46.626] [Forwarding server 38029] Got connection 2

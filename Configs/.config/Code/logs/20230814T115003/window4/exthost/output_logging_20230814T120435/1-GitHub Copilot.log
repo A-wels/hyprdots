@@ -1,0 +1,23 @@
+[INFO] [ghostText] [2023-08-14T10:13:31.596Z] Cancelled after extractPrompt
+[INFO] [ghostText] [2023-08-14T10:13:31.600Z] Cancelled after extractPrompt
+[INFO] [ghostText] [2023-08-14T10:13:31.606Z] Cancelled after extractPrompt
+[INFO] [ghostText] [2023-08-14T10:13:31.611Z] Cancelled after extractPrompt
+[INFO] [ghostText] [2023-08-14T10:16:44.752Z] Cancelled during debounce
+[INFO] [ghostText] [2023-08-14T10:16:44.875Z] Cancelled during debounce
+[INFO] [default] [2023-08-14T10:16:45.083Z] [fetchCompletions] engine https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex
+[INFO] [default] [2023-08-14T10:16:45.411Z] request.response: [https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex/completions] took 327 ms
+[INFO] [streamChoices] [2023-08-14T10:16:45.413Z] solution 0 returned. finish reason: [stop]
+[INFO] [streamChoices] [2023-08-14T10:16:45.418Z] request done: headerRequestId: [4f833711-ce46-45aa-a158-d21b067f5aae] model deployment ID: [x10511ed45107]
+[INFO] [default] [2023-08-14T10:16:47.283Z] [fetchCompletions] engine https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex
+[INFO] [ghostText] [2023-08-14T10:16:47.466Z] Cancelled after extractPrompt
+[INFO] [ghostText] [2023-08-14T10:16:47.628Z] Cancelled during debounce
+[INFO] [default] [2023-08-14T10:16:47.784Z] [fetchCompletions] engine https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex
+[INFO] [default] [2023-08-14T10:16:48.015Z] request.response: [https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex/completions] took 230 ms
+[INFO] [streamChoices] [2023-08-14T10:16:48.015Z] solution 0 returned. finish reason: [stop]
+[INFO] [streamChoices] [2023-08-14T10:16:48.016Z] request done: headerRequestId: [a238e18a-006a-4fe7-89aa-b4fe0d486e5d] model deployment ID: [x10511ed45107]
+[INFO] [default] [2023-08-14T10:16:49.575Z] [fetchCompletions] engine https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex
+[INFO] [ghostText] [2023-08-14T10:16:49.872Z] Cancelled during debounce
+[INFO] [default] [2023-08-14T10:16:50.046Z] [fetchCompletions] engine https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex
+[INFO] [default] [2023-08-14T10:16:50.263Z] request.response: [https://copilot-proxy.githubusercontent.com/v1/engines/copilot-codex/completions] took 217 ms
+[INFO] [streamChoices] [2023-08-14T10:16:50.263Z] solution 0 returned. finish reason: [stop]
+[INFO] [streamChoices] [2023-08-14T10:16:50.264Z] request done: headerRequestId: [9bb67d0b-4d5e-474c-9922-1479e4209d80] model deployment ID: [x10511ed45107]

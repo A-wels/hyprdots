@@ -1,0 +1,11 @@
+2023-08-14 10:20:45.239 [info] Experiment 'pythonPromptNewFormatterExt' is active
+2023-08-14 10:20:45.239 [info] Experiment 'pythonPromptNewToolsExt' is active
+2023-08-14 10:20:45.239 [info] Experiment 'pythonSurveyNotificationcf' is active
+2023-08-14 10:20:45.239 [info] Experiment 'pythonTestAdaptercf' is active
+2023-08-14 10:20:45.239 [info] Test server listening.
+2023-08-14 10:20:45.239 [info] Python interpreter path: /bin/python3
+2023-08-14 10:20:46.805 [info] Starting Pylance language server.
+2023-08-14 11:32:43.733 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/utils.py
+2023-08-14 11:33:51.649 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/utils.py
+2023-08-14 11:34:28.713 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/utils.py
+2023-08-14 11:46:14.105 [info] Discover tests for workspace name: FlowNet_PET - uri: /home/alex/Development/master/FlowNet_PET/train_flownet_pet.py

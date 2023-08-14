@@ -1,0 +1,16 @@
+2023-08-14 14:05:20.180 [info] Extension host with pid 54016 started
+2023-08-14 14:05:20.180 [info] Skipping acquiring lock for /home/alex/.config/Code/User/workspaceStorage/c7fc739d1e091a24cd11c71eeb13fdcf.
+2023-08-14 14:05:20.239 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-08-14 14:05:20.241 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: true, activationEvent: '*'
+2023-08-14 14:05:20.253 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-08-14 14:05:20.270 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-08-14 14:05:20.310 [info] Eager extensions activated
+2023-08-14 14:05:20.368 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-08-14 14:05:20.384 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-08-14 14:05:20.386 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-08-14 14:05:20.394 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2023-08-14 14:05:20.407 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2023-08-14 14:05:20.909 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2023-08-14 14:05:29.104 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-08-14 14:25:15.418 [info] Extension host terminating: renderer closed the MessagePort
+2023-08-14 14:25:15.429 [info] Extension host with pid 54016 exiting with code 0

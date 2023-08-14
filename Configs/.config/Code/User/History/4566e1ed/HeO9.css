@@ -1,0 +1,38 @@
+#teamA {
+    background-color: red;
+}
+
+#teamB {
+    background-color: blue;
+}
+
+#teamC {
+    background-color: green;
+}
+
+#teamD {
+    background-color: yellow;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container-full {
+    min-height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.row-full {
+    min-height: 25%;
+    height: 50%;
+}
+
+/* Optional: Add some spacing between the grid fields */
+.grid-field {
+    padding: 15px;
+    box-sizing: border-box;
+}

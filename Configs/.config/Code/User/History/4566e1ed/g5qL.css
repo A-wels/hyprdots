@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+.container {
+    font-size: 0; /*fix inline gaps*/
+    height: 100%;
+    width: 100%;
+}
+.item {
+    font-size: 16px; /*reset font size*/
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    overflow: auto; /*for scrollbar*/
+}
+.content {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0; /*stretch and fill*/
+}
+.item:nth-child(1) { background: aqua; }
+.item:nth-child(2) { background: lime; }
+.item:nth-child(3) { background: gold; }
+.item:nth-child(4) { background: teal; }
+
+.teamName {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 94px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.punkte {
+   vertical-align: middle;
+    font-size: 94px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}

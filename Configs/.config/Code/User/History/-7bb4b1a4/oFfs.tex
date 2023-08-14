@@ -1,0 +1,69 @@
+\chapter{Review of Literature}
+
+\section{Optical flow and deep learning}
+In recent times, the field of deep learning has influenced many other areas of research, one of them being optical flow. For the most times, most approaches were strongly influenced by the approach of Horn and Schunck\cite{hornDeterminingOpticalFlow}. 
+Currently, deep learning approaches are getting closer to the general performance of the classical, energy-based approaches. 
+Most research is aimed at the two-dimensional space, since most data is available only in this format. Medical data is one of the exceptions to this, since many medical scans yield three-dimensional data.
+\subsection{FlowNet and FlowNet 2.0}
+FlowNet by Fischer et al. \cite{fischerFlowNetLearningOptical2015} was one of the first approaches to apply convolutional neural networks  to the problem of optical flow. 
+Two versions of the network were proposed \ac{FlowNetS} and FlowNetCorr. 
+Since the computational requirements for three-dimensional data is much higher when compared to two-dimensional data, \acs{FlowNetS} is used in this thesis.
+The input images for \acs{FlowNetS} are two consecutive frames. Both are stacked on top of each other before being fed into the network. For images of shape $\left[H\times W \times C\right]$ the resulting input shape is $\left[H \times W \times C \times \right]$, with H being the height, W being the width and C being the number of channels of the image.
+The architecture of FlowNetS consists of an encoder and a decoder part.
+The encoder consists  of 6 consecutive convolutional layers, each followed by the ReLU  \eqref{s:deeplearning} activation functions functions, with the output of multiple inner layers forwarded to the decoder.
+Since the output of the convolutional layers is smaller than the original image resolution, the data must be upscaled. Each layer of the decoder concatenates the output of the corresponding encoder layer with the upscaled predicted flow for the previous decoder layer and the output of the deconvolution of the previous decoder layer. This rather simple design is mentioned to be inferior to other architectures in quality. The main advantage of this architecture is its small size.
+
+Ilg et al. further improved upon this approach with FlowNet 2.0 \cite{ilgFlowNetEvolutionOptical2016}.  Some of the changes are the increase in variety in training sets and the stacking of multiple networks. Additionally, the activation function has been replaced with LeakyRelu  \eqref{s:deeplearning}. This allows for better computation of large displacements. However, this will also increase the computational requirements for the network.
+
+% TODO: Flownet2 and S; Why smaller is fine?
+
+
+\subsection{RAFT}
+FlowNet was overtaken in performance by RAFT, published by Teed and Deng \cite{teedRAFTRecurrentAllPairs2020}. RAFT consists of a feature encoder that extracts features from both input frames and a context encoder that extract features from one frame only. Afterwards a correlation layer constructs a correlation volume which is updated by an update operator, which recurrently updates the predicted optical flow. Additionally, in two-dimensional space, the efficiency of the model is much higher compared to other, similar performing models. Despite the good performance of the model, the cost of creating a cost volume of three-dimensional data would not be feasible for this project.
+
+\subsection{FlowFormer}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{img/flowformer/architecture}
+	\caption{Flowformer architecture, graphic by  Huang et al. \cite{huangFlowFormerTransformerArchitecture2022}}
+	\label{fig:architectureFlowFormer}
+\end{figure}
+
+With the recent surge in relevancy of transformer models, the FlowFormer model was published by Huang et al. \cite{huangFlowFormerTransformerArchitecture2022}. 
+The approach can broadly be summarized into three steps. Firstly, a 4D cost volume is generated. Aferwards, the cost voulme is embedded into a latent cost space. Thirdly, using a recurrent cost decoder, the estimated flow is predicted from encoded latent cost features. The architecture can be seen with more detail in figure \eqref{fig:architectureFlowFormer}.
+
+While this approach outperforms most current approaches on typical datasets such as Sintel\cite{MPISintelDataset}, the resources required for training also increase. 
+
+
+
+\subsection{Optical Flow for PET}
+The problem of motion in PET has been covered by multiple authors. 
+Dawood et al. presented a mass preserving optical flow method of cardiac motion correction in 3-D PET data\cite{dawoodMassConservationbasedOptical2013}. 
+This method is based on previous work by Dawood et al., which focused on finding suitable gating schemes\cite{dawoodLungMotionCorrection2006} and finding an optimal number of gates for the gating
+process \cite{dawoodOptimalNumberRespiratory2009}. The authors also applied advanced optical flow algorithms in order to correct motion in 3-D PET data \cite{dawoodRespiratoryMotionCorrection2008}.
+\subsubsection{FlowNet-PET}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{img/flownetpet/arch}
+	\caption{Architecture of FlowNet-PET, figure by O'Briain et al. \cite{obriainFlowNetPETUnsupervisedLearning2022} }
+	\label{fig:archPET}
+\end{figure}
+
+Very recently, FlowNet-PET was published by O'Briain et al. \cite{obriainFlowNetPETUnsupervisedLearning2022}. FlowNet-PET is an unsupervised approach, which adapts FlowNet into an unsupervised model for threedimensional medical data. This is very relevant for this work, since the goal is fundamentally the same. 
+The architecture of FlowNet-PET is very similar to the architecture of FlowNetS.
+Two input frames are first downsampled by convolutional layers. Afterwards, the extracted feature map is upsampled in multiple steps, until the original resolution is reached. At each upsampling step, the optical flow is predicted. An overview of the architecture can be seen in figure \eqref{fig:archPET}. The major difference is in the used loss function. In supervised learning, the \acs{gt} data is used to evaluate the predictions, which in this case would be the optical flow.  FlowNet-PET does not use the ground truth. Instead, the predicted optical flow is applied to the base image and the resulting warped image is then compared to the target image. This allows for training on data for which no \acs{gt} is available.
+
+
+%TODO complete architecture
+This work compares different approaches to the performance of FlowNet-PET, as well as combining the approaches of this paper with FlowNet-PET in order to increase the quality of the optical flow predictions.
+
+
+\subsection{Perceptual Loss}
+%TODO: Sources
+\label{ss:perceptualloss}
+Since MSE loss can lead to blurry results \cite{}, Gong et al. proposed the use of perceptual loss \cite{} for the problem of optical flow in \enquote{PET Image Denoising Using a Deep Neural Network through Fine Tuning}\cite{}.
+The perceptual loss is calculated as stated in \cite{}:
+$$L_\text{perceptual} = \Vert \phi(y_\text{label}) - \phi (y_\text{out})\Vert^2_2$$
+Where $\phi$ is a feature extractor. Gong et al. chose the first Pooling Layer of the VGG19 \cite{} architecture for this.
+This perceptual loss was used as a part of the loss function.
+

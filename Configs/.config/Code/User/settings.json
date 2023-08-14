@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Decay-Green",
+    "editor.fontSize": 12,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "editor.inlineSuggest.enabled": true,
+    "window.zoomLevel": 1,
+    "git.ignoreLegacyWarning": true
+}

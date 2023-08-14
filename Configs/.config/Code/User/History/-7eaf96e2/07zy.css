@@ -1,0 +1,105 @@
+ /* Styles valid for all pages */
+ @font-face {
+     font-family: Roddenberry;
+     src: url("../fonts/Roddenberry.otf");
+ }
+
+ @font-face {
+     font-family: Roddenberry;
+     src: url("../fonts/Roddenberry-bold.otf");
+     font-weight: bold !important;
+ }
+
+ @font-face {
+     font-family: Roddenberry;
+     src: url("../fonts/Roddenberry-italic.otf");
+     font-style: lighter;
+ }
+ @font-face {
+    font-family: Roddenberry;
+    src: url("../fonts/Roddenberry-bold-italic.otf");
+    font-style: lighter;
+    font-weight: bold;
+}
+
+ h1 {
+    padding-top: 10vh;
+     text-align: center;
+     font-family: Roddenberry;
+     font-weight: bold !important;
+     text-transform: uppercase;
+     font-size: 58px;
+ }
+
+ h2 {
+     text-align: center;
+     font-family: Roddenberry;
+     font-weight: bold !important;
+     text-transform: uppercase;
+     text-shadow: 0 0 30px #000,0 0 30px #000,0 0 30px #000;
+ }
+
+ h3 {
+     text-align: center;
+     font-family: Roddenberry;
+     font-weight: bold !important;
+     text-transform: uppercase;
+
+
+ }
+
+ h4 {
+     text-align: center;
+     font-family: Roddenberry;
+     font-weight: bold !important;
+     text-transform: uppercase;
+
+ }
+
+ h5 {
+     text-align: center;
+     font-family: Roddenberry;
+     font-weight: bold !important;
+     text-transform: uppercase;
+
+ }
+
+ h6 {
+     text-align: center;
+     font-family: Roddenberry;
+     font-weight: bold !important;
+     text-transform: uppercase;
+
+ }
+
+ p, body {
+     font-family: Roddenberry;
+     text-transform: uppercase;
+     font-weight: bold;
+     font-size: larger;
+     margin: auto;
+ }
+ p {
+    max-width: 80vw;
+ }
+
+ .divisonoverview{
+    max-width: 60vw;
+    justify-content: center;
+    display: grid;
+    margin: auto;
+
+ }
+
+ #engineering {
+    background-color: darkorange;
+ }
+ #command {
+    background-color: crimson;
+ }
+ #science {
+    background-color: dodgerblue ;
+ }
+ #divisionsauswahl {
+    background-color: darkslategray;
+ }

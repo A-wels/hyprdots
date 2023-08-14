@@ -1,0 +1,35 @@
+<!-- Basic bootstrap webpage-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-6">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <canvas   style="position:fixed; top:0;left:0;bottom: 0; right: 0; z-index: 1;"  class="confetti" id="canvas"></canvas>
+   <!-- 2x2 grid using bootstrap. Top left: Team A, Top right: Team B, Bottom Left: Team C, Bottom Right: Team D-->
+   <div class="container">
+    <div class="item" id="item1">
+        <div class="teamName" id="Team1">Cat-Chup</div>
+        <div class="punkte" id="punkte1">0</div>
+    </div>
+    <div class="item" id="item2">
+        <div class="teamName" id="Team2">Garlic Gang</div>
+        <div class="punkte" id="punkte2">0</div>
+    </div>
+    <div class="item" id="item3">
+        <div class="teamName" id="Team3">Alex ist unkreativ</div>
+        <div class="punkte" id="punkte3">0</div>
+    </div>
+    <div class="item" id="item4">
+        <div class="teamName" id="Team4">Team 4</div>
+        <div class="punkte" id="punkte4">0</div>
+   </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

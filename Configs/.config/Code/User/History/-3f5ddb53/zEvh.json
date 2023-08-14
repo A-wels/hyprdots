@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Decay-Green",
+    "window.menuBarVisibility": "toggle",
+    "editor.fontSize": 12,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "editor.minimap.side": "left",
+    "editor.minimap.scale": 2,
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 2
+}

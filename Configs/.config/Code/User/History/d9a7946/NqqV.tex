@@ -1,0 +1,51 @@
+\chapter{Definitions}
+\section{Positron emission tomography}
+Positron emission tomography (PET) is a combination of nuclear medicine and biochemical analysis. It is widely used for medical purposes, 
+like visualizing biochemical changes in the body of patients with brain or heart conditions and cancer.
+The main difference to other nuclear medicine examinations is that PET detects metabolism within body tissues. Other methods detect the 
+radioactive substance collected by body tissue. For the process, a radioactive substance called a radiopharmaceutical, is necessary.
+This radiopharmaceutical is attached to a substance that is used by the organ targeted by the scan and injected into the patient. A scanner then 
+reads the emission of the breakdown of the radionuclide. These emissions are used to generate a 3-D vector field
+\cite{PositronEmissionTomography}.
+
+Since the acquisition of data usually takes several minutes, motion inside the body, e.g. the movement of the heart leads to blurring.
+This leads to inaccurate images and loss of detail. Especially small tumors in early stages may be not discernable from noise because of this.
+
+\section{Optical Flow}
+Optical flow is used in the field of computer vision to describe the movement of objects in a scene. A constraint that is typically used is the \textbf{brightness constancy constraint}: The constraint assumes, that the brightness of an object does not change between two frames. 
+This can be stated with the equation
+$$ I(x,y,z,t) = I(x + \delta x, y+\delta y, + z + \delta z, t + \delta t)$$ for a given voxel $I(x,y,z,t)$ with (x,y,z) being the 3d coordinates of the voxel and t as the time \cite{dawoodMassConservationbasedOptical2013}.
+Another constraint that is often used is the \emph{smoothness constraint}, as used by  Horn and Schunck \cite{hornDeterminingOpticalFlow}. This constraint assumes, that nearby pixels move with similar velocities. The goal is to minimize the square magnitude of the gradient of the optical flow velocity $$\left(\dfrac{\partial u }{\partial x}\right)^2 + \left(\dfrac{\partial u }{\partial y}\right)^2 \text{ and } \left(\dfrac{\partial v }{\partial x}\right)^2 \left(\dfrac{\partial v }{\partial y}\right)^2 \cite{hornDeterminingOpticalFlow}$$
+When deep learning is used to predict optical flow, these constrainst can still be applied in the loss function of the network.
+
+In the case of PET scans, this constraint is not fully applicable anymore, since the total brightness changes with each frame. Additionally,  a given point may change intensity between two frames.
+Despite these problems, this thesis tests the use of brightness constancy as  part of the loss function. The reasoning for this is the average intensity organs, which is different for different organs.  All organs have a higher average intensity as the background, while the liver has a higher average intensity than the lung. This may allow for better segmentation, since a source pixel that represents a part of the lung will not be a part of the background in the next frame. While the intensity may change, the differences between the organs should remain.
+
+\section{Deep learning}
+\label{s:deeplearning}
+Deep learning makes use of artificial neural networks. These networks are typically structured in multiple processing layers, thus the naming \emph{deep}.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{img/nn.png}
+	\caption{An example neural network with one input layer, four hidden layers and one output layer.}
+	\label{fig:nn}
+\end{figure}
+An example for a neural network can be seen in figure \eqref{fig:nn}. The network consists of an input layer with 8 elements. This could be the representation of a (very small) image. Each input element is connected with the four elements of the first hidden layer, which in turn are fully connected with the following hidden layers. The outputs of the last hidden layer are connected to the output layer, which consists of a single layer. For a binary classification problem, this output value could correspond to the level of confidence that the input is part of a certain class. While this example only consists of fully connected layres, many more variations are possible and commonly used.
+
+ These methods have had a massive impact in the quality of speech recognition, object recognition and many other fields. Two main categories of deep learning methods are mostly used: \emph{Supervised} and \emph{unsupervised} methods.
+In supervised networks, a ground truth is given. In the field of optical flow this means, that given two images $A$ and $B$ of shape $\left(H\times W\right)$  a ground truth $GT$ of the shape $\left(H\times W\times 2\right)$ is given. The \acl{gt} describes the movement of each Pixel $h \in H\quad w \in W$ with a vector $\begin{psmallmatrix} x\\y \end{psmallmatrix} \text{ with } x,y \in \mathbb{N}$. This ground truth can be directly used to evaluate the prediction of the network during training.
+\emph{Unsupervised} methods do not use a ground truth. Only the input and target image are available as data during training. Thus, only prediction and only be directly compared to the target image. It is not possible, validate the predicted flow, since the ground truth values are unknown. This approach is most often used, when no or only limited ground truth data is available.
+\cite{lecunDeepLearning2015}
+\subsection{Overfitting}
+Overfitting can be a problem when limited data is available or the target domain is very narrow. When overfitting occurs, the networks prediction on training data can become excellent, while having very low accuracy on data that is not present in the training data. To prevent overfitting, multiple approaches have been analyzed by Gon\c{c}alves Dos Santos and Paulo Papa \cite{santosAvoidingOverfittingSurvey2022a}.
+Adding noise to the input data can improve results significantly, since more variation is introduced into the training data.
+A powerful regularizer is \emph{dropout} which was proposed by Srivastava et al. \cite{srivastavaDropoutSimpleWay}. When dropout is applied, each connection in the network is dropped with a probability $p$. This requires the network to learn more features of the input, since learning only a few could lead to all of them being dropped, leading to bad results. Another often used method is \emph{\ac{bn}} which was proposed by Ioffe and Szegedy \cite{ioffeBatchNormalizationAccelerating2015}. As the name suggests, batch normalization normalizes the inputs for each layer which can prevent the explosion of values. It has also been proven, that \ac{bn} allows for faster convergence and more robustness to parameter initialization. Since a low amount of noise is also introduced, \ac{bn} can also help with the prevention of overfitting.
+
+In PyTorch \cite{PyTorch}, an open source  deep learning framework for python,  the batch normalization for 3d data is implemented as follows \cite{BatchNorm3dPyTorchDocumentation}:
+$$ y = \dfrac{x-E\left[ x\right]}{\sqrt{\text{Var}\left[ x\right]} + \epsilon} \times \gamma + \beta $$
+\subsection{Finetuning}
+When trying to apply a deep learning model to a new domain, the resulting performance may strongly differ from the performance of the intended domain, since no data for the new domain was included in training and the generalization performance of the model may not be good enough to deliver high quality results \cite{cetinicFinetuningConvolutionalNeural2018}.
+In this case, finetuning can be applied in order to tune an existing model on new data.
+The existing checkpoint for the model is loaded as the starting point for a new training process, which trains the checkpoint on the new dataset.
+It is often necessary to adapt the model when the dataset is different from the previously used data to allow for the new training data to be processed using the pretrained checkpoint.
+Additionally, some of the initial layers will be frozen during  finetuning. Cetinic et al. conclude, that in most cases, all layers except the first convolutional layer should be retrained \cite{cetinicFinetuningConvolutionalNeural2018}. This ensures, that the previously learned patters can not be completely erased and replaced with patters learned from the new dataset.

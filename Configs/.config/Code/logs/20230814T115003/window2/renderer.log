@@ -1,0 +1,51 @@
+2023-08-14 11:53:18.303 [error] Extension 'github.copilot' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): inlineCompletionsAdditions, terminalDataWriteEvent
+product.json (WINS): inlineCompletionsAdditions
+2023-08-14 11:53:20.969 [info] [perf] Render performance baseline is 30ms
+2023-08-14 11:53:38.394 [error] Extension 'github.copilot' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): inlineCompletionsAdditions, terminalDataWriteEvent
+product.json (WINS): inlineCompletionsAdditions
+2023-08-14 11:53:40.924 [info] [perf] Render performance baseline is 43ms
+2023-08-14 12:18:49.460 [error] Cannot read properties of undefined (reading 'data'): TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/alex/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist/extension.bundle.js:1:71163
+    at _0x272595 (/home/alex/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist/extension.bundle.js:1:82978)
+    at K.provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:101:50297)
+2023-08-14 12:34:57.862 [error] Unable to read file '/*** unresolved ***' (Error: Unable to resolve nonexistent file '/*** unresolved ***'): Error: Unable to read file '/*** unresolved ***' (Error: Unable to resolve nonexistent file '/*** unresolved ***')
+    at e.$op.w (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:627:16414)
+    at e.$op.v (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:627:16209)
+    at async e.$i9b.H (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:36716)
+    at async e.$i9b.readStream (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:36470)
+    at async Qs.zb (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:28988)
+    at async Qs.resolve (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:27435)
+    at async e.$0Yb.P (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:33072)
+    at async s.m (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:37215)
+    at async f.acquire (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:19:30375)
+    at async e.$Evb.createModelReference (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:38785)
+2023-08-14 12:36:45.989 [error] cannot open untitled:/home/alex/Development/master/get_shape.py. Detail: file already exists: Error: cannot open untitled:/home/alex/Development/master/get_shape.py. Detail: file already exists
+    at e.$g0.$tryOpenDocument (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2306:36550)
+2023-08-14 12:37:59.432 [error] Unable to read file '/*** unresolved ***' (Error: Unable to resolve nonexistent file '/*** unresolved ***'): Error: Unable to read file '/*** unresolved ***' (Error: Unable to resolve nonexistent file '/*** unresolved ***')
+    at e.$op.w (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:627:16414)
+    at e.$op.v (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:627:16209)
+    at async e.$i9b.H (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:36716)
+    at async e.$i9b.readStream (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:36470)
+    at async Qs.zb (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:28988)
+    at async Qs.resolve (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:27435)
+    at async e.$0Yb.P (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:33072)
+    at async s.m (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:37215)
+    at async f.acquire (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:19:30375)
+    at async e.$Evb.createModelReference (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:38785)
+2023-08-14 12:41:34.240 [error] Cannot read properties of undefined (reading 'data'): TypeError: Cannot read properties of undefined (reading 'data')
+    at /home/alex/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist/extension.bundle.js:1:71163
+    at _0x272595 (/home/alex/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist/extension.bundle.js:1:82978)
+    at K.provideCompletionItems (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:101:50297)
+2023-08-14 12:53:16.299 [error] Unable to read file '/*** unresolved ***' (Error: Unable to resolve nonexistent file '/*** unresolved ***'): Error: Unable to read file '/*** unresolved ***' (Error: Unable to resolve nonexistent file '/*** unresolved ***')
+    at e.$op.w (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:627:16414)
+    at e.$op.v (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:627:16209)
+    at async e.$i9b.H (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:36716)
+    at async e.$i9b.readStream (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:36470)
+    at async Qs.zb (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:28988)
+    at async Qs.resolve (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:27435)
+    at async e.$0Yb.P (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2312:33072)
+    at async s.m (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:37215)
+    at async f.acquire (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:19:30375)
+    at async e.$Evb.createModelReference (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2301:38785)
